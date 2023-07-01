@@ -42,11 +42,60 @@ int main()
         if(!isValidInput(dimension))
             goto beginning;
         string a1[dimension][dimension];
-        string b1[dimension][dimension];
         int a[dimension][dimension];
         int b[dimension][dimension];
         int resultMatrix[dimension][dimension];
             
+        for(int k = 0; k < 2; k++)
+        {
+           for(int i = 0; i < dimension; i++)
+            {
+                for(int j = 0; j < dimension; j++)
+                {
+                    a1[i][j] = "_";
+                    cout << a1[i][j] << " ";
+                }
+                cout << endl;
+            } 
+            cout << endl; 
+        }
+        
+        cout << endl << "Enter your first matrix:" << endl;
+        int countColumns = 0;
+        for(int i = 0; i < dimension; i++)
+        {
+            if(i == 0)
+            {
+                cout << "Enter your " << i + 1 << "st row" << endl;
+            }
+            else if(i == 1)
+            {
+                cout << "Enter your " << i + 1 << "nd row" << endl;
+            }
+            else if(i == 2)
+            {
+                cout << "Enter your " << i + 1 << "rd row" << endl;
+            }
+            else
+            {
+                cout << endl << "Enter your " << i + 1 << "th row:" << endl; 
+            }
+            for(int j = 0; j < dimension; j++)
+            {
+                cin >> a[i][j];
+            }  
+        }
+        
+        cout << endl;
+        for(int i = 0; i < dimension; i++)
+        {
+            for(int j = 0; j < dimension; j++)
+            {
+                cout << a[i][j] << " ";
+            }
+            cout << endl;
+        }
+        
         for(int i = 0; i < dimension; i++)
         {
             for(int j = 0; j < dimension; j++)
@@ -55,35 +104,53 @@ int main()
                 cout << a1[i][j] << " ";
             }
             cout << endl;
-        } 
-        
-        for(int i = 0; i < dimension; i++)
-        {
-            for(int j = 0; j < dimension; j++)
-            {
-                b1[i][j] = "_";
-                cout << b1[i][j] << " ";
-            }
-            cout << endl;
-        } 
-        
-        cout << endl << "Enter your first matrix:" << endl;
-        for(int i = 0; i < dimension; i++)
-        {
-            for(int j = 0; j < dimension; j++)
-            {
-                cin >> a[i][j];
-            }
-        } 
+        }
         
         cout << endl << "Enter your second matrix:" << endl;
         for(int i = 0; i < dimension; i++)
         {
+            if(i == 0)
+            {
+                cout << "Enter your " << i + 1 << "st row" << endl;
+            }
+            else if(i == 1)
+            {
+                cout << "Enter your " << i + 1 << "nd row" << endl;
+            }
+            else if(i == 2)
+            {
+                cout << "Enter your " << i + 1 << "rd row" << endl;
+            }
+            else
+            {
+                cout << endl << "Enter your " << i + 1 << "th row:" << endl; 
+            }
             for(int j = 0; j < dimension; j++)
             {
-                cin >> b[i][j];   
+                cin >> b[i][j];
             }
         } 
+        
+        cout << endl << "Your first matrix: " << endl;
+        for(int i = 0; i < dimension; i++)
+        {
+            for(int j = 0; j < dimension; j++)
+            {
+                cout << a[i][j] << " ";
+            }
+            cout << endl;
+        }
+        
+        cout << endl << "Your second matrix: " << endl;
+        for(int i = 0; i < dimension; i++)
+        {
+            for(int j = 0; j < dimension; j++)
+            {
+                cout << b[i][j] << " ";
+            }
+            cout << endl;
+        }
+        cout << endl;
         
         for(int i = 0; i < dimension; i++)
         {
@@ -111,11 +178,60 @@ int main()
         if(!isValidInput(dimension))
             goto beginning2;
         string a1[dimension][dimension];
-        string b1[dimension][dimension];
         int a[dimension][dimension];
         int b[dimension][dimension];
         int resultMatrix[dimension][dimension];
             
+        for(int k = 0; k < 2; k++)
+        {
+            for(int i = 0; i < dimension; i++)
+            {
+                for(int j = 0; j < dimension; j++)
+                {
+                    a1[i][j] = "_";
+                    cout << a1[i][j] << " ";
+                }
+                cout << endl;
+            } 
+            cout << endl;
+        }
+        
+        cout << endl << "Enter your first matrix:" << endl;
+        for(int i = 0; i < dimension; i++)
+        {
+            if(i == 0)
+            {
+                cout << "Enter your " << i + 1 << "st row" << endl;
+            }
+            else if(i == 1)
+            {
+                cout << "Enter your " << i + 1 << "nd row" << endl;
+            }
+            else if(i == 2)
+            {
+                cout << "Enter your " << i + 1 << "rd row" << endl;
+            }
+            else
+            {
+                cout << endl << "Enter your " << i + 1 << "th row:" << endl; 
+            }
+            for(int j = 0; j < dimension; j++)
+            {
+                cin >> a[i][j];
+            }
+        } 
+        cout << endl;
+        
+        for(int i = 0; i < dimension; i++)
+        {
+            for(int j = 0; j < dimension; j++)
+            {
+                cout << a[i][j] << " ";
+            }
+            cout << endl;
+        }
+        
+        cout << endl;
         for(int i = 0; i < dimension; i++)
         {
             for(int j = 0; j < dimension; j++)
@@ -126,33 +242,52 @@ int main()
             cout << endl;
         } 
         
-        for(int i = 0; i < dimension; i++)
-        {
-            for(int j = 0; j < dimension; j++)
-            {
-                b1[i][j] = "_";
-                cout << b1[i][j] << " ";
-            }
-            cout << endl;
-        } 
-        
-        cout << endl << "Enter your first matrix:" << endl;
-        for(int i = 0; i < dimension; i++)
-        {
-            for(int j = 0; j < dimension; j++)
-            {
-                cin >> a[i][j];
-            }
-        } 
         
         cout << endl << "Enter your second matrix:" << endl;
         for(int i = 0; i < dimension; i++)
         {
+            if(i == 0)
+            {
+                cout << "Enter your " << i + 1 << "st row" << endl;
+            }
+            else if(i == 1)
+            {
+                cout << "Enter your " << i + 1 << "nd row" << endl;
+            }
+            else if(i == 2)
+            {
+                cout << "Enter your " << i + 1 << "rd row" << endl;
+            }
+            else
+            {
+                cout << endl << "Enter your " << i + 1 << "th row:" << endl; 
+            }
             for(int j = 0; j < dimension; j++)
             {
                 cin >> b[i][j];   
             }
         } 
+        
+        cout << endl << "Your first matrix: " << endl;
+        for(int i = 0; i < dimension; i++)
+        {
+            for(int j = 0; j < dimension; j++)
+            {
+                cout << a[i][j] << " ";
+            }
+            cout << endl;
+        }
+        
+        cout << endl << "Your second matrix: " << endl;
+        for(int i = 0; i < dimension; i++)
+        {
+            for(int j = 0; j < dimension; j++)
+            {
+                cout << b[i][j] << " ";
+            }
+            cout << endl;
+        }
+        cout << endl;
         
         for(int i = 0; i < dimension; i++)
         {
@@ -192,9 +327,29 @@ int main()
         start4: cout << "Enter the number of columns for the second matrix: ";
         if (!isValidInput(columnNumber2))
             goto start4;
-        
+            
         if (columnNumber1 == rowNumber2)
         {
+            for(int i = 0; i < rowNumber1; i++)
+            {
+                for(int j = 0; j < columnNumber1; j++)
+                {
+                    cout << "_" << " ";
+                }
+                cout << endl;
+            } 
+            cout << endl;
+            
+            for(int i = 0; i < rowNumber2; i++)
+            {
+                for(int j = 0; j < columnNumber2; j++)
+                {
+                    cout << "_" << " ";
+                }
+                cout << endl;
+            } 
+            cout << endl;
+        
             int a[rowNumber1][columnNumber1];
             int b[rowNumber2][columnNumber2];
             int resultMatrix[rowNumber1][columnNumber2];
@@ -202,24 +357,96 @@ int main()
             cout << "Enter your first matrix:" << endl;
             for(int i = 0; i < rowNumber1; i++)
             {
+                if(i == 0)
+                {
+                    cout << "Enter your " << i + 1 << "st row" << endl;
+                }
+                else if(i == 1)
+                {
+                    cout << "Enter your " << i + 1 << "nd row" << endl;
+                }
+                else if(i == 2)
+                {
+                    cout << "Enter your " << i + 1 << "rd row" << endl;
+                }
+                else
+                {
+                    cout << endl << "Enter your " << i + 1 << "th row:" << endl; 
+                }
                 for(int j = 0; j < columnNumber1; j++)
                 {
                     cin >> a[i][j];   
                 }
             } 
             
+            cout << endl;
+            for (int i = 0; i < rowNumber1; i++) 
+            {
+                for (int j = 0; j < columnNumber1; j++) 
+                {
+                    cout << a[i][j] << " ";
+                }
+                cout << endl;
+            }
+            
+            cout << endl;
+            for (int i = 0; i < rowNumber2; i++) 
+            {
+                for (int j = 0; j < columnNumber2; j++) 
+                {
+                    cout << "_" << " ";
+                }
+                cout << endl;
+            }
+            
             cout << endl << "Enter your second matrix:" << endl;
             for(int i = 0; i < rowNumber2; i++)
             {
+                if(i == 0)
+                {
+                    cout << "Enter your " << i + 1 << "st row" << endl;
+                }
+                else if(i == 1)
+                {
+                    cout << "Enter your " << i + 1 << "nd row" << endl;
+                }
+                else if(i == 2)
+                {
+                    cout << "Enter your " << i + 1 << "rd row" << endl;
+                }
+                else
+                {
+                    cout << endl << "Enter your " << i + 1 << "th row:" << endl; 
+                }
                 for(int j = 0; j < columnNumber2; j++)
                 {
                     cin >> b[i][j];   
                 }
-            } 
+            }
             
+            cout << endl << "Your first matrix:" << endl;
             for (int i = 0; i < rowNumber1; i++) 
             {
+                for (int j = 0; j < columnNumber1; j++) 
+                {
+                    cout << a[i][j] << " ";
+                }
+                cout << endl;
+            }
+            
+            cout << endl << "Your second matrix: " << endl;
+            for (int i = 0; i < rowNumber2; i++) 
+            {
                 for (int j = 0; j < columnNumber2; j++) 
+                {
+                    cout << b[i][j] << " ";
+                }
+                cout << endl;
+            }
+            
+            for(int i = 0; i < rowNumber1; i++)
+            {
+                for(int j = 0; j < columnNumber2; j++)
                 {
                     resultMatrix[i][j] = 0;
                 }
@@ -257,6 +484,9 @@ int main()
     
     return 0;
 }
+
+
+
 
 
 
